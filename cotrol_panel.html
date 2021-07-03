@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset= "utf-8">
+    <title> Control Panel </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+       <style>
+        body{
+        
+       }
+       
+.button {
+  background-color: #4CAF90;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.slidecontainer {
+  width: 50%;
+text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+p {
+  text-align: right;
+  
+} 
+</style>
+  </head>
+  
+  <body>
+    <div class="slidecontainer">
+       <p>
+محرك ١
+    </p> <input type="range" min="0" max="180" class="slider" id="range1"name="sld1"  onchange="show_value1(this.value);">
+    <p>Value: <span id="slider_value1" style="color:red;"></span></p>
+   
+       <p>
+  محرك ٢
+    </p> <input type="range" min="0" max="180" class="slider" id="range2"name="sld2"  onchange="show_value2(this.value);">
+    <p>Value: <span id="slider_value2" style="color:red;"></span></p>
+    
+     <p>
+  محرك ٣
+    </p> <input type="range" min="0" max="180" class="slider" id="range3"name="sld3"  onchange="show_value3(this.value);">
+    <p>Value: <span id="slider_value3" style="color:red;"></span></p>
+    
+     <p>
+محرك ٤
+    </p> <input type="range" min="0" max="180" class="slider" id="range4"name="sld4"  onchange="show_value4(this.value);">
+    <p>Value: <span id="slider_value4" style="color:red;"></span></p>
+    
+     <p>
+محرك ٥
+    </p> <input type="range" min="0" max="180" class="slider" id="range5"name="sld4"  onchange="show_value5(this.value);">
+    <p>Value: <span id="slider_value5" style="color:red;"></span></p>
+    
+     <p>
+  محرك ٦
+    </p> <input type="range" min="0" max="180" class="slider" id="range6"name="sld5"  onchange="show_value6(this.value);">
+    <p>Value: <span id="slider_value6" style="color:red;"></span></p>
+   </div>
+    
+    <input type="button" class="button" value="حفظ القيم ">
+    <input type="button" class="button" value="تشغيل">
+  
+       <script>
+        function show_value1(a){
+          document.getElementById("slider_value1").innerHTML= a;  
+        } 
+        function show_value2(b){
+          document.getElementById("slider_value2").innerHTML= b;  
+        }
+        function show_value3(c){
+          document.getElementById("slider_value3").innerHTML= c;  
+        }
+        function show_value4(d){
+          document.getElementById("slider_value4").innerHTML= d;  
+        }
+        function show_value5(e){
+          document.getElementById("slider_value5").innerHTML= e;  
+        }
+        function show_value6(f){
+          document.getElementById("slider_value6").innerHTML= f;  
+        }
+        
+        
+        
+</script>
+       
+  </body>
+  
+</html>
